@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moses Njeru Munyi | CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Moses Njeru Munyi</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+      <li><a href="case-study-youtube.html">Case Studies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="cv-section">
+  <div class="container">
+    <h2>Curriculum Vitae</h2>
+    <p>You can also view the interactive version <a href="https://moselanto.github.io/htmlcvpdfusion/" target="_blank" class="btn">Open CV Page</a></p>
+    <iframe src="https://moselanto.github.io/htmlcvpdfusion/" title="Moses Njeru CV" class="cv-iframe"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Moses Njeru Munyi • 
+    <a href="https://github.com/moselanto" target="_blank">GitHub</a> • 
+    <a href="https://www.linkedin.com/in/moses-njeru-munyi-b02156b2/" target="_blank">LinkedIn</a>
+  </p>
+</footer>
+
+  <script>
+  // Fade-in on scroll
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOptions = { threshold: 0.2 };
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
+
+</body>
+</html>
