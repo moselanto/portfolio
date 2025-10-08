@@ -5,53 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moses Njeru Munyi | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Navigation -->
   <header>
-    <div class="container">
+    <nav class="navbar">
       <h1 class="logo">Moses Njeru Munyi</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="bio.html">Bio/About</a></li>
-          <li><a href="case-study-sentisave.html" target="_blank">Case Studies</a></li>
-          <li><a href="cv.html" target="_blank">CV</a></li>
-        </ul>
-      </nav>
-    </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="cv.html" target="_blank">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Designing experiences that inspire trust and simplicity.</h2>
-        <p>I’m a UX/UI designer passionate about creating intuitive digital products that make everyday financial decisions feel effortless.</p>
-      </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/profile-placeholder.jpg" alt="Profile Photo" class="profile-pic" />
+    <h2>Hi, I’m <span>Moses</span> — UX/UI Designer</h2>
+    <p>I craft meaningful, user-centered digital experiences.</p>
+  </section>
 
-    <section class="case-studies">
-      <div class="container">
-        <h3>Case Studies</h3>
-        <div class="grid">
-          <div class="card">
-            <img src="images/sentisave-mockup.jpg" alt="Sentisave App Mockup" />
-            <h4>Finance App — Sentisave</h4>
-            <p>A savings app designed to make financial growth simple, engaging, and emotionally rewarding.</p>
-            <a href="case-study-sentisave.html" target="_blank" class="btn">View Case Study</a>
-          </div>
-        </div>
+  <!-- Case Studies -->
+  <section id="case-studies" class="case-studies">
+    <h2>Case Studies</h2>
+    <div class="case-grid">
+      <div class="case-card">
+        <img src="images/youtube-thumbnail.jpg" alt="YouTube Clone Project" />
+        <h3>YouTube Clone</h3>
+        <p>A responsive web app replicating YouTube’s core UX using HTML, CSS, and JavaScript.</p>
+        <a href="case-study-youtube.html" target="_blank" class="btn">View Case Study</a>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>📧 <a href="mailto:mosemqute@gmail.com">mosemqute@gmail.com</a> |
-         💼 <a href="https://www.linkedin.com/in/moses-njeru-munyi-b02156b2/" target="_blank">LinkedIn</a> |
-         💻 <a href="https://github.com/moselanto/" target="_blank">GitHub</a></p>
-      <p>&copy; 2025 Moses Njeru Munyi. All rights reserved.</p>
+      <div class="case-card">
+        <img src="images/sentisave-thumbnail.jpg" alt="Finance App Project" />
+        <h3>Sentisave Finance App</h3>
+        <p>A modern finance app that transforms saving into a rewarding, goal-based experience.</p>
+        <a href="case-study-financeapp.html" target="_blank" class="btn">View Case Study</a>
+      </div>
     </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p>
+      Feel free to reach out for collaborations or just a friendly hello 👋
+    </p>
+    <div class="contact-links">
+      <a href="mailto:mosemqute@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/moses-njeru-munyi-b02156b2/" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/moselanto" target="_blank">💻 GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Moses Njeru Munyi • 
+      <a href="https://github.com/moselanto" target="_blank">GitHub</a> • 
+      <a href="https://www.linkedin.com/in/moses-njeru-munyi-b02156b2/" target="_blank">LinkedIn</a>
+    </p>
   </footer>
+
 </body>
 </html>
