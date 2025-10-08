@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Moses Njeru Munyi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Moses Njeru</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <img src="images/profile-placeholder.jpg" alt="Moses Njeru Munyi" class="hero-img">
+      <h2>My <span class="accent">Projects</span></h2>
+      <p class="hero-subtext">A selection of UX/UI projects and design explorations</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="case-studies fade-in">
+    <div class="container">
+      <h2>Case Studies</h2>
+      <p class="section-intro">Dive deeper into my featured projects below</p>
+
+      <div class="case-grid">
+        <!-- Finance App -->
+        <div class="card fade-in">
+          <img src="images/sentisave-thumbnail.jpg" alt="Finance App - Sentisave">
+          <h3>Finance App — Sentisave</h3>
+          <p>A modern, goal-based savings app designed to make saving engaging and emotionally rewarding.</p>
+          <a href="case-study-financeapp.html" target="_blank" class="btn">View Case Study</a>
+        </div>
+
+        <!-- YouTube Clone -->
+        <div class="card fade-in">
+          <img src="images/youtube-thumbnail.jpg" alt="YouTube Clone - JAM_BI">
+          <h3>YouTube Clone — JAM_BI</h3>
+          <p>A reimagined video-sharing platform concept focused on clean UI, improved engagement, and accessibility.</p>
+          <a href="case-study-youtube.html" target="_blank" class="btn">View Case Study</a>
+        </div>
+
+        <!-- Coming Soon -->
+        <div class="card fade-in">
+          <img src="images/comingsoon.jpg" alt="Coming Soon">
+          <h3>Coming Soon</h3>
+          <p>Stay tuned for more exciting projects showcasing creativity, usability, and product thinking.</p>
+          <a href="#" class="btn" style="opacity:0.6; pointer-events:none;">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact fade-in">
+    <div class="container">
+      <h2>Let’s Connect</h2>
+      <p class="section-intro">I’m open to collaborations and UX/UI design opportunities</p>
+      <ul class="contact-links">
+        <li><a href="mailto:mosemqute@gmail.com">mosemqute@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/moses-njeru-munyi-b02156b2/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/moselanto" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Moses Njeru Munyi · <a href="mailto:mosemqute@gmail.com">Email</a></p>
+  </footer>
+
+  <!-- Scroll animation -->
+  <script>
+    const fades = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    fades.forEach(fade => observer.observe(fade));
+  </script>
+</body>
+</html>
